@@ -1,0 +1,38 @@
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1200px) {
+    html,
+    body {
+        min-width: 320px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    a:focus {
+        outline: none;
+    }
+    .container {
+        width: 100% !important;
+        max-width: 1200px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 675px) {}
+
+@media screen and (max-width: 575px) {}
+
+@media screen and (max-width: 475px) {}
+
+@media screen and (max-width: 414px) {}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 320px) {}
