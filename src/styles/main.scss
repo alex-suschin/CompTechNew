@@ -4,6 +4,7 @@
 @import "helpers/functions";
 @import "vendor/libs";
 @import "../../node_modules/bootstrap-scss/bootstrap";
+@import "../../node_modules/swiper/swiper";
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
@@ -898,10 +899,187 @@ select {
 
 .our-team {
     position: relative;
-    padding: 0 0 0 0;
+    padding: 0 0 175px 0;
     .title {
-        margin-bottom: 140px;
+        margin-bottom: 57px;
     }
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    padding: 39px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 2px rgba(142, 142, 142, 0.25);
+    border-radius: 6px;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 15px;
+    // margin: 0 15px;
+}
+
+.swiper-slide__left {
+    width: 35.853%;
+}
+
+.swiper-slide__right {
+    width: 100% - 35.853%;
+    padding: 0 10px 0 66px;
+}
+
+.master-name {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #1A1A1A;
+    margin-bottom: 11px;
+}
+
+.master-post {
+    background: #276EF1;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #F9F9FF;
+    padding: 6px 15px 6px 15px;
+    display: block;
+    width: fit-content;
+    margin-bottom: 32px;
+}
+
+.master-work-ex {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 39px 0;
+}
+
+.master-work-ex__item {
+    max-width: 150px;
+    width: 100%;
+    margin-right: 30px;
+    b {
+        display: block;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        color: #1A1A1A;
+        margin-bottom: 13px;
+    }
+    span {
+        display: block;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #1A1A1A;
+    }
+}
+
+.master-work-ex__item:last-child {
+    margin-right: 0;
+}
+
+.about-master {
+    .title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        color: #1A1A1A;
+        margin-bottom: 14px;
+        text-align: left;
+    }
+    p {
+        text-align: left;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #1A1A1A;
+    }
+}
+
+.our-team-slider {
+    padding: 75px 0 15px 0;
+    margin: 0 auto;
+}
+
+.swiper-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+    display: block;
+    background: #C4C4C4;
+    border-radius: 3px;
+    width: 35px;
+    height: 5px;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.swiper-pagination-bullet:hover {
+    background: #276EF1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #276EF1;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 1px;
+    right: 90px;
+    width: 53px;
+    height: 53px;
+    background-color: #F7F7F7;
+    background-image: url(../img/prev.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 1px;
+    right: 13px;
+    width: 53px;
+    height: 53px;
+    background-color: #F7F7F7;
+    background-image: url(../img/next.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.swiper-button-disabled {
+    opacity: 0.5;
 }
 
 

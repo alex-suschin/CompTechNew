@@ -1,4 +1,6 @@
 import $ from "jquery";
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
 import "./import/modules";
 import "../../node_modules/bootstrap/js/dist/modal";
 
@@ -41,6 +43,19 @@ $(function() {
     $('.btn-more').click(function() {
         $('.table-price-row').css('display', 'table-row');
         $(this).hide();
+    });
+
+    var swiper = new Swiper('.our-team-slider', {
+        autoHeight: true,
+        effect: 'fade',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        }
     });
 
     $(window).on('load resize scroll', function() {
