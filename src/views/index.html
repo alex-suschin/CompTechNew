@@ -115,6 +115,7 @@
 
     <div class="services" id="services">
         <div class="decor2"><img src="../img/decor2.png" alt=""></div>
+        <div class="decor3"><img src="../img/decor3.png" alt=""></div>
         <div class="container">
             <div class="title">Наши услуги</div>
             <div class="row">
@@ -184,106 +185,229 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="price-btns">
-                        <a href="javascript:void(0);" class="active">Общие</a>
-                        <a href="javascript:void(0);">Ремонт</a>
+                        <a href="javascript:void(0);" data-switch="table-1" class="active">Общие</a>
+                        <a href="javascript:void(0);" data-switch="table-2">Ремонт</a>
                     </div>
-                    <div class="table-price">
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Диагностика</div>
-                            <div class="table-price-cell">Бесплатно</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                    <div class="price-tables">
+                        <div class="table-price" id="table-1">
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Выезд мастера</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Установка WINDOWS</div>
+                                <div class="table-price-cell">от 450 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Настройка роутера</div>
+                                <div class="table-price-cell">от 480 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Удаление вирусов</div>
+                                <div class="table-price-cell">от 310 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Чистка от пыли</div>
+                                <div class="table-price-cell">от 490 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Установка антивируса (1 год)</div>
+                                <div class="table-price-cell">от 390 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Настройка биоса</div>
+                                <div class="table-price-cell">от 560 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Установка драйвера</div>
+                                <div class="table-price-cell">от 190 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Настройка / установка программ</div>
+                                <div class="table-price-cell">от 320 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Установка офиса (Word, Excel)</div>
+                                <div class="table-price-cell">от 690 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Замена комплектующих</div>
+                                <div class="table-price-cell">от 595 руб. <i>+ стоимость запчасти</i></div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Замена термопасты</div>
+                                <div class="table-price-cell">от 440 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Настройка принтера</div>
+                                <div class="table-price-cell">от 420 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Настройка почты</div>
+                                <div class="table-price-cell">от 450 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Обучение работе с ПК (30 мин.)</div>
+                                <div class="table-price-cell">Бесплот 690 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Восстановление пароля Wi-Fi роутера</div>
+                                <div class="table-price-cell">от 690 руб.</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Восстановление данных</div>
+                                <div class="table-price-cell">от 290 руб. за ГБ</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
                         </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Выезд мастера</div>
-                            <div class="table-price-cell">Бесплатно</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Установка WINDOWS</div>
-                            <div class="table-price-cell">от 450 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Настройка роутера</div>
-                            <div class="table-price-cell">от 480 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Удаление вирусов</div>
-                            <div class="table-price-cell">от 310 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Чистка от пыли</div>
-                            <div class="table-price-cell">от 490 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Установка антивируса (1 год)</div>
-                            <div class="table-price-cell">от 390 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Настройка биоса</div>
-                            <div class="table-price-cell">от 560 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Установка драйвера</div>
-                            <div class="table-price-cell">от 190 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Настройка / установка программ</div>
-                            <div class="table-price-cell">от 320 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Установка офиса (Word, Excel)</div>
-                            <div class="table-price-cell">от 690 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Замена комплектующих</div>
-                            <div class="table-price-cell">от 595 руб. <i>+ стоимость запчасти</i></div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Замена термопасты</div>
-                            <div class="table-price-cell">от 440 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Настройка принтера</div>
-                            <div class="table-price-cell">от 420 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Настройка почты</div>
-                            <div class="table-price-cell">от 450 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Обучение работе с ПК (30 мин.)</div>
-                            <div class="table-price-cell">Бесплот 690 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Восстановление пароля Wi-Fi роутера</div>
-                            <div class="table-price-cell">от 690 руб.</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
-                        </div>
-                        <div class="table-price-row">
-                            <div class="table-price-cell">Восстановление данных</div>
-                            <div class="table-price-cell">от 290 руб. за ГБ</div>
-                            <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+
+                        <div class="table-price" id="table-2" style="display: none;">
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
+                            <div class="table-price-row">
+                                <div class="table-price-cell">Диагностика</div>
+                                <div class="table-price-cell">Бесплатно</div>
+                                <a href="javascript:void(0);" class="table-price-cell">Заказать</a>
+                            </div>
                         </div>
                     </div>
-                    <a href="javascript:void(0)" class="btn-more btn-blue">Еще услуги</a>
+                </div>
+
+                <a href="javascript:void(0)" class="btn-more btn-blue">Еще услуги</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-our">
+        <div class="decor4"><img src="../img/decor4.png" alt=""></div>
+        <div class="container">
+            <div class="title">Почему выбирают нас?</div>
+            <div class="row why-our__items">
+                <div class="col-lg-3">
+                    <div class="why-our__item">
+                        <div class="why-our__item--img"><img src="../img/why1.svg" alt=""></div>
+                        <div class="why-our__item--title">Бесплатный<br> выезд</div>
+                        <div class="why-our__item--desc">Выeзжаeм к Вам тeчeнии 5 минут пoслe звoнка
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="why-our__item">
+                        <div class="why-our__item--img"><img src="../img/why2.svg" alt=""></div>
+                        <div class="why-our__item--title">Сертифицированные мастера</div>
+                        <div class="why-our__item--desc">Всe наши мастepа пpoвepeнныe и диплoмиpoванныe спeциалисты
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="why-our__item">
+                        <div class="why-our__item--img"><img src="../img/why3.svg" alt=""></div>
+                        <div class="why-our__item--title">Уважение к<br> клиенту</div>
+                        <div class="why-our__item--desc">Пpи нeoбхoдимoсти бeсплатнo дoставим Вашу технику</div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="why-our__item">
+                        <div class="why-our__item--img"><img src="../img/why4.svg" alt=""></div>
+                        <div class="why-our__item--title">Гарантия до<br> 3-х лет</div>
+                        <div class="why-our__item--desc">v</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="our-team">
+        <div class="container">
+            <div class="title">Наша команда</div>
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form" style="background-image: url(../img/bg-form.jpg);">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
 
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
