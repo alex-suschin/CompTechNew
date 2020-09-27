@@ -21,16 +21,6 @@ $(function() {
         return false;
     });
 
-    $('#hamburger-icon').click(function() {
-        $(this).toggleClass('active');
-        if ($(this).hasClass('active')) {
-            $('.mob-menu').addClass('active');
-            $('html').addClass('ov-hidden');
-        } else {
-            $('.mob-menu').removeClass('active');
-            $('html').removeClass('ov-hidden');
-        }
-    });
 
 
     $('.price-btns a').click(function() {
@@ -46,8 +36,9 @@ $(function() {
     });
 
     var swiper = new Swiper('.our-team-slider', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
         autoHeight: true,
-        effect: 'fade',
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -55,20 +46,15 @@ $(function() {
         pagination: {
             el: '.swiper-pagination',
             clickable: true
+        },
+        breakpoints: {
+            991: {
+                autoHeight: true,
+            }
         }
     });
 
-    jQuery(function($) {
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 100) {
-                $('.header').addClass('fixed');
-                $('body').css('padding-top', '80px');
-            } else if ($(this).scrollTop() < 100) {
-                $('.header').removeClass('fixed');
-                $('body').css('padding-top', '100px');
-            }
-        });
-    });
+
 
     $('body').on('click', '[data-toggle="modal"]', function() {
         var button = $(this);
@@ -77,12 +63,45 @@ $(function() {
         modal.find('.hidden-input').val(recipient);
     });
 
+    $('#hamburger-icon').click(function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('.mobile-menu').addClass('active');
+            $('html').addClass('ov-hidden');
+        } else {
+            $('.mobile-menu').removeClass('active');
+            $('html').removeClass('ov-hidden');
+        }
+    });
+
     $(window).on('load resize scroll', function() {
 
         var width = $(window).width();
 
-        if ((width > '700') && (width < '1000')) {
+        if (width > '991') {
+            jQuery(function($) {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 100) {
+                        $('.header').addClass('fixed');
+                        $('body').css('padding-top', '80px');
+                    } else if ($(this).scrollTop() < 100) {
+                        $('.header').removeClass('fixed');
+                        $('body').css('padding-top', '100px');
+                    }
+                });
+            });
+        }
 
+        if (width < '992') {
+            // $(".top-menu").appendTo($(".mobile-menu"));
+            // $(".cities").insertAfter($(".top-menu"));
+            // $(".phones").insertAfter($(".cities"));
+
+            $('.top-menu a').click(function() {
+                $('#hamburger-icon').removeClass('active');
+                $('.mobile-menu').removeClass('active');
+                $('html').removeClass('ov-hidden');
+            });
         }
 
     });
