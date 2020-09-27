@@ -7,7 +7,7 @@ import "../../node_modules/bootstrap/js/dist/modal";
 $(function() {
 
 
-    $('.top-menu a').click(function() {
+    $('.top-menu a, .footer-anchor').click(function() {
         var scroll_elem = $(this).attr('href');
         if ($(scroll_elem).length != 0) {
             $('html, body').animate({
@@ -36,7 +36,7 @@ $(function() {
     $('.price-btns a').click(function() {
         $('.price-btns').find('.active').removeClass('active');
         $(this).addClass('active');
-        $('.price-tables').find('.table-price').hide();
+        $('.price-tables').find('.price-tables__elem').hide();
         $('#' + $(this).data('switch')).show();
     });
 
@@ -56,6 +56,18 @@ $(function() {
             el: '.swiper-pagination',
             clickable: true
         }
+    });
+
+    jQuery(function($) {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.header').addClass('fixed');
+                $('body').css('padding-top', '80px');
+            } else if ($(this).scrollTop() < 100) {
+                $('.header').removeClass('fixed');
+                $('body').css('padding-top', '100px');
+            }
+        });
     });
 
     $(window).on('load resize scroll', function() {
